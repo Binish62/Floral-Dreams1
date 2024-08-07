@@ -1,0 +1,297 @@
+:root{
+    --pink:#e84393;
+}
+
+*{
+     margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* transition: .2s linear; */
+    
+}
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+html{
+font-size: 62.5%;
+scroll-behavior: smooth;
+scroll-padding-top: 6rem;
+overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+
+}
+.heading {
+     text-align: center;
+     font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem;
+    background: rgb(255, 51, 153, .05);
+}
+.heading{
+color: var(--pink);
+
+}
+.btn{
+    display: inline;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--pink);
+}
+header{
+       
+    background: #fff;
+    padding: 2rem 9%;   
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+
+}
+
+ header .logo span {
+color: var(--pink);
+
+ }
+
+header  .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+     color: var(--pink);
+
+
+}
+
+header .icons a {
+        columns: #333;
+font-size: 3rem;
+margin: 1.5rem;
+
+}
+
+header .icons a:hover{
+    color: var(--pink);
+
+
+}
+header #toggler {
+    display: none;
+}
+
+header .fa-bars{
+    color: #333;
+    font-size: 3rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgb(0, 0, 0,.3);
+    display: none;
+}
+.about .row{
+display: flex;
+align-items: center;
+gap: 2rem;
+pad: 2rem 0;
+padding-bottom: 3rem;
+
+}
+
+.about .row .image-container image{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: 5rem;
+    box-shadow: o.5rem 1rem rgb(0, 0, 0, .1);
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    background-image: url(../img/banner_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .container{
+    font-size: 2rem;
+    color: #333;
+}
+a.logo {
+    float: left;
+    width: 30%;
+}
+
+nav.navbar {
+    float: left;
+    width: 50% ;
+}
+.icons {
+    width: 20%;
+}
+
+.main_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.home h3 {
+    font-size: 68px;
+    font-family: math;
+    color: black;
+}
+section#about h3 {
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.home span {
+    font-size: 35px;
+    color: #000;
+    padding:10px 0 20px 0;
+}
+.home p {
+    color: #000;
+    padding: 10px 0 70px 0;
+    width: 70%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+section.main_box {
+    background-color: antiquewhite;
+    padding: 50px 0 50px 0;
+}
+.about p{
+    color: #000;
+    padding: 10px 0 70px 0;
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+.image-container h3 {
+    position: absolute;
+    top: 170px;
+    font-size: 46px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    color: #fffffffa;
+    line-height: 80px;
+    -webkit-text-stroke: 1px #333;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+section.main_box .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0 20px;
+}
+
+section.main_box .row .column {
+    width: 25%;
+    border: 1px solid;
+    padding: 30px 30px 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #000;
+    background-color: #fff ;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.img_box {
+    width: 20%;
+    float: left;
+}
+
+.text_box {
+    width: 80%;
+    float: right;
+}
+.img_box img {
+    width: 39px;
+}
+section.main_box .row .column:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+}
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+.heading{
+    font-size: 3rem;
+
+}
+
+}
+
+/*media queries*/
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+header{
+    padding: 2rem;
+}
+
+}
+/*media queries*/
+@media (max-width:768px){
+html .fa-bars{
+ display: block;
+
+}
+  header .navbar{
+position: absolute;
+top: 100%; left: 0; right: 0;
+background: #eee;
+border-top: .1rem solid rgb(0,0,0,.1);
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+header #toggler:checked ~ .navbar{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+header .navbar a {
+margin: 1.5rem;
+padding: 1.5rem;
+background: #fff;
+border: .1rem solid rgb(0,0,0, .1);
+display: block;
+}
+
+}
